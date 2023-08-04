@@ -1,1 +1,1 @@
-console.log("I am working");
+(()=>{"use strict";const e=document.querySelector("#content");e.appendChild(function(){const e=["Home","Contact","About"],t=document.createElement("header");for(let n=0;n<=2;n++){let o=document.createElement("p");o.textContent=e[n],t.appendChild(o)}return t}()),e.appendChild(function(){const e=document.createElement("footer");return e.textContent="Odin project",e}()),console.log("I am working")})();

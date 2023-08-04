@@ -1,32 +1,101 @@
+
+@font-face {
+    font-family:'Josefin' ;
+    src: url(../JosefinSans-Regular.ttf);
+}
+
+
+#content
+{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2400px 1fr;
+   
+}
+body
+{
+    margin: 0;
+    height: 100vh;
+}
+*
+{
+    margin: 0;
+    font-family: Josefin;
+}
+html
+{
+    height: 100vh;
+}
+
 header
 {
-    background-color: rgb(34, 3, 3);
+    background-color: rgb(82, 68, 14);
     display: flex;
     color: white;
-    justify-content: space-evenly;
-    font-size: 20px;
+    justify-content:center;
+    gap:90px;
+    align-items: center;
+    font-size: 5vh;
+    grid-row: 1/2;
+    position: relative;
 }
+header p
+{
+    width: 800px;
+    text-align: center;
+    cursor: pointer;
+}
+header p:hover::after,
+header p:hover::before
+
+{
+    background-image: url('../hamburger.png');
+    background-size: 100% 100%;
+    display: inline-block;
+    background-repeat: no-repeat;
+  
+    
+    
+
+    width: 2vw; 
+    height: 4vh;
+    content:"";
+} 
+
+ 
+
 footer
 {
     background-color: black;
     color: white;
-    font-size: 20px;
+    font-size: 3vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    grid-row: 3/4;
 }
+.optional
+{
+display: grid;
+grid-row: 2/3;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+background-image: url(../v642-nap-35-fastfood.jpg);
+background-repeat: repeat;
+background-size: 20%;
+
+}
+
 #welcome
 {
     display: flex;
     flex-direction: column;
     align-items: center;
+   
 }
-.food
-{
-    height: 100px;
-    width: 100px;
-}
+
 #home
 {
     display: flex;
@@ -40,3 +109,55 @@ footer
     justify-content: space-evenly;
     gap:10px
 }
+#pose
+{
+    height: 80%;
+    
+    object-fit:contain;
+    align-self: center;
+    justify-self: center;
+    min-height: 0;  /* NEW */
+    min-width: 0;
+    grid-row: 1/4;
+}
+.gray
+{
+    background-color: black;
+    background: rgba(0, 0, 0, 0.5);
+    grid-column: 2/3;
+    grid-row: 1/4;
+    height: 80%;
+    width: 80%;
+    align-self: center;
+    justify-self:left;
+} 
+.gray>p
+{
+    font-size: 250px;
+    font-weight: 700;
+    color: white;
+    margin: 0px 0px;
+    opacity:1;
+}
+.gray>div
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 100px;
+color: white;
+opacity: 1;
+}
+.gray>div>p
+{
+    align-self: center;
+    justify-self: center;
+    font-weight: 700;
+
+}
+.gray>div>div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+

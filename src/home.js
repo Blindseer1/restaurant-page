@@ -1,23 +1,16 @@
-
-
-function createHeader()
+function createMascot()
 {
-  const headArray=['Home','Contact','About']
-    const header=document.createElement('header');
-    for(let i=0;i<=2;i++)
-    {
-        let ase=document.createElement('p');
-        ase.textContent=headArray[i]
-       header.appendChild(ase);    
-    }
-  return header;
+   
+    let mascot=document.createElement('img')
+    mascot.src="../theMan";
+    return mascot;
+}
+function createHomePage()
+{
+    let newContent=document.createElement('div')
+    newContent.classList.add('home');
+    newContent.appendChild(createMascot());
+    return newContent;
 }
 
-function createFooter()
-{
-    const footer=document.createElement('footer');
-    footer.textContent="Odin project";
-    return footer;
-}
-
-export {createHeader,createFooter};
+export {createHomePage};

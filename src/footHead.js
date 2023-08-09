@@ -2,7 +2,7 @@
 
 function createHeader()
 {
-  const headArray=['Home','Contact','Menu']
+  const headArray=['Home','Menu','Contact']
     const header=document.createElement('header');
     for(let i=0;i<=2;i++)
     {

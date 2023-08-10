@@ -2,16 +2,22 @@ import { createContact } from "./contact";
 import { createHeader,createFooter} from "./footHead"
 import { createHomePage } from "./home";
 import { createMenu } from "./menu";
+import "./style.css"
+
+
 function emptyContent()
 {
     content.textContent="";
 }
 
+
 const body=document.querySelector('body');
 const content=document.querySelector('#content');
 
+
 body.appendChild(createHeader())
 body.appendChild(createFooter())
+content.appendChild(createHomePage())
 
 const home=document.querySelector('[data-index="0"]');
 home.addEventListener('click',()=>

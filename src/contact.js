@@ -7,11 +7,11 @@ function createContact()
    console.log('working')
    return newContent;
 }
-
+import animeGirl from "../images.jpeg";
 function createAnimeGirl()
 {
     const myImage=document.createElement('img');
-    myImage.src="../images.jpeg";
+    myImage=animeGirl;
     myImage.classList.add('pose')
     return myImage;
 }

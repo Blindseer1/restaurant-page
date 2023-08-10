@@ -5,7 +5,7 @@ let Burger=function createBurger(picture,price,title)
     let newBurger=document.createElement('div');
 
     let newImage=document.createElement('img');
-     newImage.src=picture;
+     newImage=picture;
      newImage.classList.add('burgerimg')
 
      let newTitle=document.createElement('h4');
@@ -27,11 +27,15 @@ let Burger=function createBurger(picture,price,title)
     const getBurger=()=>{return newBurger;}
     return{getBurger}        
     }
-
-let blueBurg=Burger('../burgers/blue-burg.jpg',"20","Blue Burger");
-let redBurg=Burger('../burgers/red-burg.jpeg','20',"Red Burger");
-let pinkBurg=Burger('../burgers/pink-burg.jpeg','40',"Pink Burger");
-let theBurg=Burger("../burgers/the-burg.jpg","100","The Burger");
+ 
+    import blue from '../burgers/blue-burg.jpg';
+    import red from '../burgers/red-burg.jpeg';
+    import pink from '../burgers/pink-burg.jpeg';
+    import normal from "../burgers/the-burg.jpg";
+let blueBurg=Burger(blue,"20","Blue Burger");
+let redBurg=Burger(red,'20',"Red Burger");
+let pinkBurg=Burger(pink,'40',"Pink Burger");
+let theBurg=Burger(normal,"100","The Burger");
 
 
 function createMenu()

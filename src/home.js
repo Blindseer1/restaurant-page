@@ -1,8 +1,11 @@
+import theMan from "../theMan";
+
+
 function createMascot()
 {
    
     let mascot=document.createElement('img')
-    mascot.src="../theMan";
+    mascot=theMan;
     mascot.classList.add('mascot');
     return mascot;
 }
